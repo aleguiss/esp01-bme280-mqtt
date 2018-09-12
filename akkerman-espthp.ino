@@ -1,5 +1,14 @@
 /*
   Based on https://github.com/akkerman/espthp
+  
+    raw/chipId/status
+    raw/chipId/temperature
+    raw/chipId/humidity
+    raw/chipId/pressure
+    raw/chipId/vcc
+  
+  Reset pin is high (with 10-12k resistor) and pulled low for reset. ESP.GPIO0 is pulled low for programming.
+  After uploading the sketch: ESP.GPIO0 is connected to BME280.SDA ESP.GPIO2 is connected to BME280.SCL
 */
 
 #include <ESP8266WiFi.h>
